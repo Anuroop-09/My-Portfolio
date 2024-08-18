@@ -1,0 +1,143 @@
+/* ****************** */
+/*       CONNECT      */
+/* ****************** */
+
+.section-connect {
+    background-color: #043b4f;
+    color: #ddd;
+    padding: 6.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.connect-heading {
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.connect-heading span {
+    font-weight: normal;
+}
+
+.connect-form {
+    width: 60%;
+    border: 3px solid #961f60;
+}
+
+.connect-form-head {
+    font-size: 3rem;
+    margin: 2.4rem 0;
+    letter-spacing: 1px;
+}
+
+.connect-form form {
+    margin: 2rem 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 2.4rem;
+}
+
+.connect-form div label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.connect-form div label span {
+    color: red;
+    font-size: 1.6rem;
+}
+
+.connect-form div input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.connect-organization {
+    grid-column: 1 / -1;
+}
+
+.connect-message {
+    grid-column: 1 / -1;
+}
+
+.connect-btn {
+    width: 50%;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #961f60;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.connect-btn:hover {
+    background-color: #7c245d;
+    color: #ddd;
+}
+
+/* ****************** */
+/*      LOCATION      */
+/* ****************** */
+
+.section-location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4.8rem 9.6rem;
+    color: #043b4f;
+}
+
+.office-heading {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.office-para {
+    font-size: 3rem;
+    margin-bottom: 1.6rem;
+}
+
+.office-phone {
+    font-size: 1.6rem;
+}
+
+.addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4.8rem;
+    row-gap: 2rem;
+}
+
+.addresses div {
+    border-top: 2px solid #961f60;
+    width: 80%;
+    padding: 2.4rem 0;
+}
+
+.addresses div h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.addresses div p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.address-image {
+    width: 100%;
+}

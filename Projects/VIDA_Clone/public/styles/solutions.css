@@ -1,0 +1,242 @@
+.btn-request, .btn-demo {
+    text-transform: uppercase;
+    padding: 1.4rem 2.4rem;;
+    border-radius: 50px;
+    border: none;
+    background-color: #961f60;
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/**************************/
+/*      REQUEST INFO      */
+/**************************/
+
+.section-request {
+    background-color: #043b4f;
+    align-items: center;
+    
+}
+
+.request-text p {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.request-text span {
+    font-weight: 400;
+}
+
+.request-image img {
+    width: 100%;
+}
+
+/**************************/
+/*          HOW           */
+/**************************/
+
+.section-how {
+    background-color: #10607e;
+    color: #ddd;
+    padding: 4.8rem 9.6rem;
+}
+
+.heading-how {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+.stages {
+    justify-content: center;
+    column-gap: 3.2rem;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+}
+
+.stage img {
+    width: 80%;
+    align-self: center;
+    margin-top: auto;
+}
+
+.btn-learn {
+    text-transform: uppercase;
+    border: none;
+    background-color: #db4642;
+    color: #fff;
+    padding: 1rem 2.4rem;
+    border-radius: 50px;
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+
+/**************************/
+/*         TRAILS         */
+/**************************/
+
+.section-trails {
+    text-transform: uppercase;
+    margin: 6.4rem 0;
+}
+
+.section-trails .heading-secondary {
+    padding: 0 24.6rem;
+    font-weight: 900;
+}
+
+.section-trails .heading-secondary span {
+    font-weight: inherit;
+    color: #db4642;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    gap: 4.8rem;
+    margin: 6.4rem 0;
+}
+
+.brand-logo {
+    max-width: 16rem;
+}
+
+/**************************/
+/*        DISEASES        */
+/**************************/
+
+.section-diseases {
+    background-color: #043b4f;
+}
+
+.section-diseases .disease-name {
+    background-color: #db4642;
+    padding: 5px;
+    border-radius: 50px;
+    width: 14rem;
+    align-self: center;
+}
+
+/**************************/
+/*       TESTIMONIAL      */
+/**************************/
+
+.section-testimonial {
+    background-color: #7c245d;
+    padding: 6.4rem 9.6rem;
+    color: #ddd;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.testimonial {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+}
+
+.testimonial-img {
+    justify-self: center;
+}
+
+.testimonial-text {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.testimonial-author {
+    font-size: 1.4rem;
+}
+
+.testimonial-author span {
+    font-weight: normal;
+}
+
+/**************************/
+/*           DEMO         */
+/**************************/
+
+.sectio-demo {
+    padding: 4.8rem 9.6rem;
+}
+
+.demo-grid {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.demo-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.demo-text {
+    font-size: 2rem;
+    color: #043b4f;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.btn-demo {
+    display: inline;
+    width: 20rem;
+}
+
+.demo-img-box {
+    display: flex;
+    justify-content: center;
+}
+
+.demo-image {
+    width: 70%;
+}
+
+/**************************/
+/*         AUTHORS        */
+/**************************/
+
+.section-authors {
+    background-color: #043b4f;
+    padding: 4.8rem;
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+    color: #ddd;
+}
+
+.author-head {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.author img {
+    width: 14rem;
+    margin-right: 2rem;
+}
+
+.author-text {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.author-name {
+    font-size: 1.2rem;
+}
+
+.author-name span {
+    font-weight: 700;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSpace Page - Clone</title>
+    <link rel="shortcut icon" href="Resources/Slack Page Title Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="STYLE CSS/workspace.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="browser">
+        <div class="titlebar">
+            <footer>
+                <div class="input-wrap">
+                    <span>🕒</span>
+                    <input type="text" placeholder=" Search in PVPSIT-373 ">
+                    <span>🟣</span>
+                </div>
+            </footer>
+        </div>
+        <div class="window">
+            <div class="sidebar">
+                <div class="main-slide">
+                    <h2>PVPSIT-373 ⏷<span>💬</span></h2>
+                </div>
+                <div class="browsing">
+                    ⋮ Browse slack
+                </div>
+                <div class="Channels">⏷ Channels</div>
+                <ul id="channels-list">
+                    <li id="general" class="active"># general</li>
+                    <li id="mini-project"># mini-project</li>
+                    <li id="Slack Solution"># Slack Solution</li>
+                    <li id="random"># random</li>
+                    <li><span class="group-member-count">+</span>Add channels</li>
+                </ul>
+                <div class="Direct-messages">⏷ Direct messages</div>
+                <ul>
+                    <li><span class="circle online"></span> Anuroop-373 you</li>
+                    <li><span class="circle online"></span> Srinivasu-9</li>
+                    <li><span class="circle online"></span> Sujatha-12</li>
+                    <li><span class="group-member-count">+</span>Add teammates</li>
+                </ul>
+            </div>
+
+            <div class="chat-container">
+                <header>
+                    <span class="name1"> # general ⏷</span>
+                </header>
+
+                <div class="messages-container">
+                    <ul id="messages-list">
+                    </ul>
+                </div>
+
+                <footer>
+                    <div class="input-wrapper">
+                        <span>⚡</span>
+                        <input type="text" placeholder="Send a message to #general">
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS Files/workspace.js"></script>
+</body>
+
+</html>

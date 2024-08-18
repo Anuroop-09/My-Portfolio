@@ -1,0 +1,259 @@
+h2{
+    font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+h3{
+    font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+p{
+    font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+/* Section-1 & Header */
+.header{
+    background-color: #541554;
+    padding-bottom: 90px;
+}
+.content{
+    padding: 0 4rem;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-item:hover{
+    background-color: #1264a3;
+    color: white;
+}
+.list{
+    color: white;
+}
+.list:hover{
+    color: grey;
+}
+.announcement{
+    background-color: #1264a3;
+    padding-left: 2.5rem;
+    letter-spacing: 0.5px;
+}
+.header-h2{
+    letter-spacing: -2.0px;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+.mt-5 .btn{
+    padding: 16px 38px;
+}
+.header-p1{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    max-width: 50%;
+    font-size: 1.2rem;
+}
+.header-p2{
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+.btn-talk{
+    border-color: white;
+    color: white;
+}
+.btn-talk:hover{
+    background-color: #701770;
+    border-color: white;
+    color: white; 
+}
+.btn-white{
+    background-color: white;
+}
+.btn-white:hover{
+    background-color: rgb(228, 219, 230);
+    color: rgb(0, 0, 0);
+}
+.header-video{
+    float: right;
+    margin-top: 48px;
+}
+
+/* Section-2 & Companies and features */
+.companies-features{
+    background-color: #f4ede4;
+}
+.companies{
+    text-align: center;
+}
+.comp-p{
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+.cf2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+.matter{
+    align-items: center;
+}
+.cf2-1{
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 80%;
+}
+.cf2-2{
+    font-size: 1rem;
+    max-width: 70%;
+}
+
+
+/* Section-3 & Stats and features */
+.sf3{
+    text-align: center;
+}
+.sf3-h21{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+.btn-sf3-1{
+    background-color: #611f69;
+    color: white;
+    padding: 16px 38px;
+}
+.btn-sf3-1:hover{
+    background-color: #4a154b;
+    color: white;
+}
+.btn-sf3-2{
+    border-color: #611f69;
+    color: #611f69;
+    padding: 16px 38px;
+}
+.btn-sf3-2:hover{
+    background-color: rgb(228, 219, 230);
+    border-color: #4a154b;
+    color: #4a154b;
+}
+.sf3-per{
+    padding: 5rem 5rem;
+}
+.sf3-per-h2{
+    color: #701770;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.sf3-per-p{
+    font-size: 14px;
+    max-width: 60%;
+}
+.sf3-utube{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.sf3-video{
+    border-radius: 0 200px 200px 0;
+}
+.sf3-video-p{
+    font-size: 26px;
+    max-width: 90%;
+}
+.sf3-last-p{
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+}
+
+/* Section-4 & Options */
+.options{
+    background-color: #f4ede4;
+}
+.rows{
+    display: flex;
+    justify-content: center;
+}
+.section{
+    width: 285px;
+    height: 420px;
+    background-color: white;
+    margin: 0 1rem;
+    justify-content: center;
+}
+.o4-img{
+    padding: 12px;
+    width: 285px;
+    height: 208px;
+}
+.o4-text{
+    padding: 0 12px;
+}
+.o4-link{
+   padding: 0 12px;
+   margin-top: 85px;
+}
+.o4-link2{
+    padding: 0 12px;
+    margin-top: 60px;
+}
+img.img{
+    margin-left: 110px;
+}
+.o4-sec-p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.o4-sec-h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: -0.3px;
+}
+
+/* Section-5 & Footer */
+.foot-head{
+    background-color: #4a154b;
+    text-align: center;
+    padding-bottom: 7rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.foot-h2{
+    padding: 7rem 0 3rem 0;
+    font-size: 2.7rem;
+    letter-spacing: -0.5px;
+}
+.btn-foot-white{
+    background-color: white;
+    color: #541554;
+    padding: 16px 38px;
+}
+.btn-foot-white:hover{
+    background-color: rgb(228, 219, 230);
+    border-color: #4a154b;
+    color: #4a154b;
+}
+.btn-foot-violet{
+    border-color: white;
+    color: white;
+    padding: 16px 38px;
+}
+.btn-foot-violet:hover{
+    background-color: #701772;
+    border-color: white;
+    color: white;
+    padding: 16px 38px;
+}
+.foot-h5{
+    font-size: 16px;
+}
+.foot-ul{
+    font-size: 14px;
+}
+.foot-links{
+    font-size: 14px;
+}
+.footer.dropdown-menu{
+    top: -100%;
+}
+.foot-last-p{
+    font-size: 12px;
+    color: grey;
+}

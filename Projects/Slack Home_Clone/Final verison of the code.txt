@@ -1,0 +1,436 @@
+HTML:
+<div class="browser">
+  <div class="titlebar">
+    <footer>
+        <div class="input-wrap">
+           <span>🕒</span>
+        <input type="text" placeholder=" Search in PVPSIT-373 ">
+           <span>�</span>
+          </div>
+      </footer>
+  </div>
+  <div class="window">
+    <div class="sidebar">
+      <div class="main-slide">
+        <h2>PVPSIT-373 ⏷<span>💬</span></h2>
+      </div>
+      <div class="browsing">
+        ⋮ Browse slack
+      </div>
+      <div class= "Channels">⏷ Channels</div>
+      <ul id="channels-list">
+        <li id="general" class="active"># general</li>
+        <li id="mini-project" ># mini-project</li>
+        <li id="Slack Solution" ># Slack Solution</li>
+        <li id="random" ># random</li>
+         <li><span class="group-member-count">+</span>Add channels</li>
+      </ul>
+       <div class= "Direct-messages">⏷ Direct messages</div>
+      <ul>
+        <li><span class="circle online"></span> Anuroop-373 you</li>
+        <li><span class="circle online"></span> Srinivasu-9</li>
+        <li><span class="circle online"></span> Sujatha-12</li>
+         <li><span class="group-member-count">+</span>Add teammates</li>
+      </ul>
+    </div>
+    
+    <div class="chat-container">
+      <header>
+        <span class="name1"> # general ⏷</span>
+      </header>
+      
+      <div class="messages-container">
+        <ul id="messages-list">  
+        </ul>
+      </div>
+      
+      <footer>
+        <div class="input-wrapper">
+        <span>⚡</span>
+        <input type="text" placeholder="Send a message to #general">
+          </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+CSS:
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.browser{
+  max-width: 940px;
+  height: 110vh;
+  margin:20px auto;
+  border-radius: 6px;
+  overflow: hidden; 
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+}
+span{
+  display: inline-block;
+}
+.titlebar{
+  background: #2b092a;
+  height:34px;
+}
+.titlebar footer {
+  min-height: 80px;
+  padding: 0.3rem 15.75rem;
+  color: white;
+}
+.input-wrap input {
+  font-family: serif;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.1rem;
+  padding-left: 0.15rem;
+  border-left: 1px solid #ccc;
+  border-radius: 0.15rem;
+}
+.input-wrap span {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.input-wrap input:focus {
+  outline: none;
+}
+.window{
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  height: 100%;
+}
+
+.sidebar{
+  background : #3f0d40;
+  color: rgb(241 246 250);
+}
+.sidebar h2 {
+  margin-top: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight:550;
+}
+.sidebar .main-slide span{
+  margin-left: 65px;
+}
+.sidebar .browsing{
+  margin-left:10px;
+  margin-bottom:10px;
+  margin-top:15px;
+}
+.sidebar .browsing{
+  cursor: pointer;
+}
+.sidebar .Channels{
+  margin-left:10px;
+  margin-bottom:8px;
+  margin-top:15px;
+  color: #ccc;
+  cursor: pointer;
+}
+.sidebar li.active{
+  background: rgb(17 100 163);
+  color: white;
+}
+.sidebar .Direct-messages{
+  margin-left:10px;
+  margin-bottom:8px;
+  margin-top:15px;
+  color: #ccc;
+  cursor: pointer;
+}
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  margin-right: 3px;
+}
+
+.circle.online {
+  background: #29ac76;
+}
+.sidebar li{
+  padding-left: 30px;
+  line-height: 1.4;
+  color: #ccc;
+  
+}
+.sidebar li:hover {
+  background: #2b092a;
+  cursor: pointer;
+  color: white;
+}
+.group-member-count {
+  font-size: 1.1rem;
+  background: #2b092a;
+  color: #ccc;
+  padding: 1.1px;
+  line-height: 0.8rem;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.chat-container header{
+  min-height: 6.5%;
+  border-bottom :1px solid #ddd;
+  font-size:1rem;
+  padding: 0.6rem;
+}
+.chat-container .name1{
+  font-weight: 700;
+  cursor: pointer;
+}
+.chat-container .messages-container{
+  height: 72%;
+}
+.chat-container footer {
+  min-height: 80px;
+  padding: 0.5rem 1.1rem;
+}
+.messages-container{
+  padding: 0.5rem 1.5rem;
+  overflow-y: auto;
+}
+.message{
+  display: grid;
+  grid-template-columns:40px 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.message-photo{
+  display: block;
+  max-width:100%;
+  border-radius: 4px;
+}
+.message-object .name{
+  font-weight: 700;
+}
+.message-object .time{
+  font-size: 0.75rem;
+  color: #666;
+}
+.message-object .content{
+  margin: 0.2rem 0;
+  line-height: 1.2;
+}
+.chat-container .input-wrapper {
+  border: 1px solid #666;
+  padding: 1.3rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+.input-wrapper input {
+  font-family: serif;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid #ccc;
+}
+.input-wrapper span {
+  font-size: 0.9rem;
+}
+.input-wrapper input:focus {
+  outline: none;
+}
+
+JS:
+const allMessages= {
+  "general": [
+  {
+    sender: {
+      name: 'Slack bot',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-V-L3LM3amOt_N_OOkG1GLRkb5r6HnW8QoA&usqp=CAU'
+    },
+    message: 'Welcome to slack. Thanks for choosing Slack application for Professional conversation. Have a nice day.',
+    created_at: '06:00 AM'
+  },{
+    sender: {
+      name: 'Prasanth',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtDG75Pw8ERUHYLa0Yy996FLg6IWVLWz2Y8g&usqp=CAU'
+    },
+    message: 'Hey Anuroop-373! #PVPSIT-373 is your workspace. You can add or create channels here.',
+    created_at: '06:10 AM'
+  },{
+    sender: {
+      name: 'Sandeep',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp3DxP80ArpRzsB0XWBG9Ow5GeuefbLrUHw&usqp=CAU'
+    },
+    message: 'You joined # Slack Solutions. Go through the files of on-going project and start your work. ',
+    created_at: '06:45 AM'
+  },{
+    sender: {
+      name: 'Slack bot',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-V-L3LM3amOt_N_OOkG1GLRkb5r6HnW8QoA&usqp=CAU'
+    },
+    message: 'You created and joined in channel # mini-project',
+    created_at: '07:30 AM'
+  }
+],  
+  "mini-project": [
+  {
+    sender: {
+      name: 'Anuroop-373',
+      photo: 'https://www.kindpng.com/picc/m/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png'
+    },
+    message: 'Hi, Every one. Welcome to my design of Slack User Interface',
+    created_at: '08:00 AM'
+  }, {
+    sender: {
+      name: 'Anuroop-373',
+      photo: 'https://www.kindpng.com/picc/m/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png'
+    },
+    message: "My name is Anuroop Pamarthi. I'm pursuing 3rd B.Tech Mechanical Engineering in PVP Siddhartha Institute Of Technology",
+    created_at: '08:05 AM'
+  },{
+    sender: {
+      name: 'Srinivasu-9',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVMPAMj4kJW8TZon1aUFta_Wxo2kI7g_BfA&usqp=CAU'
+    },
+    message: 'This is my first mini-project. From this mini-project i learnt how to create a web page using HTML, CSS and JS',
+    created_at: '08:10 AM'
+  },{
+    sender: {
+      name: 'Sujatha-12',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4oz0KdCvHj_hvY5exy-qFr06SPFjyA4ZoPg&usqp=CAU'
+    },
+    message: 'To create a web page we just need only HTML and CSS if we want any functionality to it then we go through the JS ',
+    created_at: '08:18 AM'
+  }
+],
+   "Slack Solution": [
+  {
+    sender: {
+      name: 'Sasidhar-79',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGa43cPo70DYcZ847mc02nOf8y0r9nJ38WQ&usqp=CAU'
+    },
+    message: "We're presenting the new checkout flows to our product managers this week, but I'd like to use our team weekly to get everyone's thoughts on the approach",
+    created_at: '10:15 AM'
+  },{
+    sender: {
+      name: 'Kalisha-87',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTBCwcpKu5VpX4nkWoTpzkxVKZHQDtDY4B5Q&usqp=CAU'
+    },
+    message: 'Such a lively discussion, everyone! I took notes on your questions and have some answers for you here in the thread.',
+    created_at: '10 :45 AM'
+   },{
+    sender: {
+      name: 'Naga kumar-92',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_iOPCfzUabcJaH6YMZ_V7ZE4UnFh90DmpMA&usqp=CAU'
+    },
+    message: 'I would like to spend a few minutes of tomorrows meeting talking through some of the key points from the code audit. Having trouble articulating it in writing',
+    created_at: '11:03 AM'
+   }, {
+    sender: {
+      name: 'Siddhartha-95',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVvtoeotXM-BT8yeadvWbP5-YCMdfjIXjKBA&usqp=CAU'
+    },
+    message: 'And here are the slides that I will go through. Please take a look beforehand',
+     created_at: '11:32 AM'
+   },{
+    sender: {
+      name: 'Gowtham-A7',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0u57hMIjgOHTVl_Jw_NIUSSEU3LNP9B-U_g&usqp=CAU'
+    },
+    message: 'Total analysis is done. Now optimization team you can proceed to the further process',
+    created_at: '11:42 AM'
+   }
+ ],
+  "random": [
+  {
+    sender: {
+      name: 'Pradeep-A9',
+      photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbl7ZFgZJfgtgBj58TylTN_LODDU935i-HA&usqp=CAU'
+    },
+    message: 'Please stand by for a redlined contract from Fast Shipping Co. There might be substantial changes. Hoping to have it back to you by end of day.',
+    created_at: '06:00 PM'
+  }, {
+    sender: {
+      name: 'Kriti Sanyal',
+      photo: 'https://a.slack-edge.com/a2ce1/marketing/img/avatars/persona_j/persona-j.en-IN.png'
+    },
+    message: 'Let me know if you would like to have a quick chat with their team to talk through the changes.',
+    created_at: '06:35 PM'
+  },{
+    sender: {
+      name: 'Sandeep Mishra',
+      photo: 'https://a.slack-edge.com/02792/marketing/img/avatars/persona_c/persona-c.en-IN.png'
+    },
+    message: 'Hmm, that might be a good idea. I have got some questions.',
+    created_at: '07:10 PM'
+  },{
+    sender: {
+      name: 'Sandeep',
+      photo: 'https://a.slack-edge.com/02792/marketing/img/avatars/persona_h/persona-h.en-IN.png'
+    },
+    message:'I will start a call and ask them to join.',
+    created_at: '07:45 PM'
+  },{
+    sender: {
+      name: 'Rahul Khanna',
+      photo: 'https://a.slack-edge.com/02792/marketing/img/avatars/persona_g/persona-g.en-IN.png'
+    },
+    message: 'I am meeting with our contact at Express Logistics later today. Can I get pre-approval on an estimated discount of 4.5%? This is based on projected activation of 11k.',
+    created_at: '08:30 PM'
+  }
+],
+};
+
+function populateMessages(channel_name) {
+   const messages = allMessages[channel_name];
+  const ul = document.getElementById('messages-list');
+  ul.innerHTML = "";
+  for (const message of messages) {
+    const html = `<li class="message">
+            <img class="message-photo" src="${message.sender.photo}" alt="profilephoto for ${message.sender.name}">
+            <div class="message-object">
+              <span class="name">${message.sender.name}</span>
+              <span class="time">${message.created_at}</span>
+              <div class="content">${message.message}</div>
+            </div>
+          </li>`;
+  
+  ul.innerHTML += html;
+  }
+
+}
+
+function setActiveChannel(channel_name) {
+  const channels = document.querySelectorAll('#channels-list li');
+  
+  channels.forEach(channel =>{
+    channel.classList.remove("active");
+  });
+  
+  const li = document.getElementById(channel_name);
+  li.classList.add("active");
+  
+}
+
+const general = document.getElementById('general');
+general.addEventListener('click', function() {
+  populateMessages('general');
+  setActiveChannel('general')
+});
+const miniproject = document.getElementById('mini-project');
+miniproject.addEventListener('click', function(){
+  populateMessages('mini-project');
+  setActiveChannel('mini-project')
+});
+const SlackSolution = document.getElementById('Slack Solution');
+SlackSolution.addEventListener('click', function(){
+  populateMessages('Slack Solution');
+  setActiveChannel('Slack Solution')
+});
+
+const random = document.getElementById('random');
+random.addEventListener('click',function(){
+  populateMessages('random');
+  setActiveChannel('random')
+});
+
+populateMessages('general');

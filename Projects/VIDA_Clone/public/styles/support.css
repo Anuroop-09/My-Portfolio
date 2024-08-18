@@ -1,0 +1,171 @@
+/* ****************** */
+/*   CONTACT US PART  */
+/* ****************** */
+.section-contact-us {
+    color: #043b4f;
+    display: flex;
+    flex-direction: column;
+    /* margin: 2.6rem 0; */
+    gap: 4.8rem;
+    background: url("../Images/Support-Page/contact-us-background.jpg") no-repeat;
+    background-size: cover;
+    padding: 4.8rem 0;
+}
+
+.main-contact {
+    width: 60%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 3.2rem;
+}
+
+.contact-text-box {
+    margin-bottom: 6.4rem;
+    color: #ddd;
+}
+
+.contact-primary {
+    font-size: 4.8rem;
+}
+
+.contact-text {
+    font-size: 2rem;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 1rem;
+    width: 20rem;
+    padding: 4.8rem 1.8rem 2.6rem;
+    background-color: #cdd8dc;
+    border-radius: 5px;
+}
+
+.card-icon {
+    font-size: 5.2rem;
+}
+
+.card-heading {
+    font-size: 2rem;
+}
+
+.card-text {
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.action {
+    margin-top: auto;
+}
+
+.action-btn {
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    background-color: #043b4f;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+/* **************** */
+/*    NEWS PART     */
+/* **************** */
+
+.form-newsletter {
+    padding: 4.8rem 0;
+    background-color: #043b4f;
+    color: #ddd;
+}
+
+.form-text-box {
+    padding: 0 6.4rem;
+}
+
+.form-secondary {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.form-text {
+    font-size: 1.2rem;
+}
+
+.form-text a {
+    color: inherit;
+}
+
+.newsletter-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-right: 3.2rem;
+}
+
+.newsletter-form label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form label span{
+    color: red;
+    font-size: 1.6rem;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-email {
+    grid-column: 1 / -1;
+}
+
+.form-organization {
+    grid-column: 1 / -1;
+}
+
+.form-consent {
+    grid-column: 1 / -1;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.form-consent #consent {
+    width: 1.2rem;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.form-btn {
+    width: 50%;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #961f60;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #7c245d;
+    color: #ddd;
+}

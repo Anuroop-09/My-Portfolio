@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    background-color: #FFEEAD;
+}
+
+.about {
+    color: #A02334;
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.heading-primary {
+    font-size: 4.8rem;
+}
+
+.heading-secondary {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.heading-teritary {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.author-intro {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.projects {
+    padding: 4.8rem 9.6rem;
+    color: #A02334;
+}
+
+.projects-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.project {
+    font-size: 2rem;
+    padding: 3rem;
+    background-color: #FFAD60;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.project a {
+    text-decoration: none;
+    color: #A02334;
+}

@@ -1,0 +1,28 @@
+/* This is CSS */
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator-info{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:initial;
+
+}
+
+.rows{
+    margin: 50px;
+}
+
+input{
+    width: 60px;
+    height: 25px;
+}
+#submit{
+    margin: 15px 50px;
+}
+

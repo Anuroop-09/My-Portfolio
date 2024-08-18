@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.browser {
+    /* max-width: 940px; */
+    height: 100vh;
+    /* margin:20px auto;
+    border-radius: 6px; */
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    font-family: sans-serif;
+}
+
+span {
+    display: inline-block;
+}
+
+.titlebar {
+    background: #2b092a;
+    height: 34px;
+}
+
+.titlebar footer {
+    min-height: 80px;
+    padding: 0.3rem 15.75rem;
+    color: white;
+}
+
+.input-wrap input {
+    font-family: serif;
+    border: none;
+    font-size: 1rem;
+    margin-left: 0.1rem;
+    padding-left: 0.15rem;
+    border-left: 1px solid #ccc;
+    border-radius: 0.15rem;
+}
+
+.input-wrap span {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.input-wrap input:focus {
+    outline: none;
+}
+
+.window {
+    display: grid;
+    grid-template-columns: 20.5% 1fr;
+    height: 100%;
+}
+
+.sidebar {
+    background: #3f0d40;
+    color: rgb(241 246 250);
+}
+
+.sidebar h2 {
+    margin-top: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 550;
+}
+
+.sidebar .main-slide span {
+    margin-left: 65px;
+}
+
+.sidebar .browsing {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.sidebar .browsing {
+    cursor: pointer;
+}
+
+.sidebar .Channels {
+    margin-left: 10px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.sidebar li.active {
+    background: rgb(17 100 163);
+    color: white;
+}
+
+.sidebar .Direct-messages {
+    margin-left: 10px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    margin-right: 3px;
+}
+
+.circle.online {
+    background: #29ac76;
+}
+
+.sidebar li {
+    padding-left: 30px;
+    line-height: 1.4;
+    color: #ccc;
+
+}
+
+.sidebar li:hover {
+    background: #2b092a;
+    cursor: pointer;
+    color: white;
+}
+
+.group-member-count {
+    font-size: 1.1rem;
+    background: #2b092a;
+    color: #ccc;
+    padding: 1.1px;
+    line-height: 0.8rem;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.chat-container header {
+    min-height: 6.5%;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.chat-container .name1 {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.chat-container .messages-container {
+    height: 72%;
+}
+
+.chat-container footer {
+    min-height: 80px;
+    padding: 0.5rem 1.1rem;
+}
+
+.messages-container {
+    padding: 0.5rem 1.5rem;
+    overflow-y: auto;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.message-photo {
+    display: block;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.message-object .name {
+    font-weight: 700;
+}
+
+.message-object .time {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.message-object .content {
+    margin: 0.2rem 0;
+    line-height: 1.2;
+}
+
+.chat-container .input-wrapper {
+    border: 1px solid #666;
+    padding: 1.3rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.input-wrapper input {
+    font-family: serif;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid #ccc;
+}
+
+.input-wrapper span {
+    font-size: 0.9rem;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+}

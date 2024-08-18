@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home - Clinical Imaging Intelligence</title>
+        <link rel="shortcut icon" href="./public/images/vida-favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./public/styles/general.css" />
+        <link rel="stylesheet" href="./public/styles/home.css" />
+        <link rel="stylesheet" href="./public/styles/support.css">
+        <link rel="stylesheet" href="./public/styles/solutions.css" />
+        <link rel="stylesheet" href="./public/styles/queries.css" />
+        <link rel="stylesheet" href="./public/styles/connect.css">
+        <link rel="stylesheet" href="./public/styles/about.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="#"
+                  ><img
+                    src="./public/images/Home-Page/vida-nav-logo.png"
+                    alt="vida-nav-logo image"
+                /></a>
+              </div>
+              <nav class="navbar">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="./views/solutions.html" class="nav-link">solutions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" style="pointer-events: none"
+                      >
+                      <span>expertise</span>
+                      <ion-icon class="dropdown-icon" name="caret-down-outline"></ion-icon>
+                    </a
+                    >
+                    <ul class="sub-menu">
+                      <li class="sub-item"><a href="" class="sub-link ">blog</a></li>
+                      <li class="sub-item"><a href="" class="sub-link ">webinars</a></li>
+                      <li class="sub-item">
+                        <a href="" class="sub-link ">validation</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./views/connect.html" class="nav-link">
+                      <span>connect</span>
+                      <ion-icon class="dropdown-icon" name="caret-down-outline"></ion-icon>
+                    </a>
+                    <ul class="sub-menu">
+                      <li class="sub-item">
+                        <a href="./views/support.html" class="sub-link">support</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./views/about.html" class="nav-link "
+                      >
+                      <span>about</span>
+                      <ion-icon class="dropdown-icon" name="caret-down-outline"></ion-icon>
+                      </a
+                    >
+                    <ul class="sub-menu">
+                      <li class="sub-item"><a href="" class="sub-link ">news</a></li>
+                      <li class="sub-item">
+                        <a href="" class="sub-link ">leadership</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="" class="sub-link ">investors</a>
+                      </li>
+                      <li class="sub-item"><a href="" class="sub-link ">careers</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item cta">
+                    <a href="" class="nav-link cta ">
+                      <span class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="lock-icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text">log in</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              
+              <button onclick="openorCloseMenu()" class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+              </button>
+        </header>
+        <main>
+            <section class="section-hero">
+                <div class="banner-text">
+                    <p>Recent Alpha-1 COPD Webinar with Igor Barjaktarevic, MD, PhD</p>
+                    <a href="" ><svg class="broad-cast-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M150.94 192h33.73c11.01 0 18.61-10.83 14.86-21.18-4.93-13.58-7.55-27.98-7.55-42.82s2.62-29.24 7.55-42.82C203.29 74.83 195.68 64 184.67 64h-33.73c-7.01 0-13.46 4.49-15.41 11.23C130.64 92.21 128 109.88 128 128c0 18.12 2.64 35.79 7.54 52.76 1.94 6.74 8.39 11.24 15.4 11.24zM89.92 23.34C95.56 12.72 87.97 0 75.96 0H40.63c-6.27 0-12.14 3.59-14.74 9.31C9.4 45.54 0 85.65 0 128c0 24.75 3.12 68.33 26.69 118.86 2.62 5.63 8.42 9.14 14.61 9.14h34.84c12.02 0 19.61-12.74 13.95-23.37-49.78-93.32-16.71-178.15-.17-209.29zM614.06 9.29C611.46 3.58 605.6 0 599.33 0h-35.42c-11.98 0-19.66 12.66-14.02 23.25 18.27 34.29 48.42 119.42.28 209.23-5.72 10.68 1.8 23.52 13.91 23.52h35.23c6.27 0 12.13-3.58 14.73-9.29C630.57 210.48 640 170.36 640 128s-9.42-82.48-25.94-118.71zM489.06 64h-33.73c-11.01 0-18.61 10.83-14.86 21.18 4.93 13.58 7.55 27.98 7.55 42.82s-2.62 29.24-7.55 42.82c-3.76 10.35 3.85 21.18 14.86 21.18h33.73c7.02 0 13.46-4.49 15.41-11.24 4.9-16.97 7.53-34.64 7.53-52.76 0-18.12-2.64-35.79-7.54-52.76-1.94-6.75-8.39-11.24-15.4-11.24zm-116.3 100.12c7.05-10.29 11.2-22.71 11.2-36.12 0-35.35-28.63-64-63.96-64-35.32 0-63.96 28.65-63.96 64 0 13.41 4.15 25.83 11.2 36.12l-130.5 313.41c-3.4 8.15.46 17.52 8.61 20.92l29.51 12.31c8.15 3.4 17.52-.46 20.91-8.61L244.96 384h150.07l49.2 118.15c3.4 8.16 12.76 12.01 20.91 8.61l29.51-12.31c8.15-3.4 12-12.77 8.61-20.92l-130.5-313.41zM271.62 320 320 203.81 368.38 320h-96.76z"/>
+                    </svg></a> 
+                </div>
+                <div class="main-hero grid grid-2-cols">
+                    <div class="hero-img-box">
+                        <!-- video -->
+                        <img src="./public/images/Home-Page/Hero section/vida-hero-image" alt="hero lung image">
+                    </div>
+                    <div class="hero-text-box">
+                        <h1 class="heading-primary">
+                            <span class="blod-text">VIDA IS ACCELERATING</span>
+                            <span>RESPIRATORY CLINICAL TRIAL</span>
+                            <span class="blod-text">THROUGH INTELLIGENCE</span>
+                        </h1>
+                        <a href="" class="btn btn-see show-modal">SEE HOW</a>
+                    </div>
+                </div>
+                <div class="diseases">
+                  <ul class="diseases-list grid grid-6-cols">
+                      <li>
+                          <a href="" >
+                              <img src="./public/images/Home-Page/Hero section/covid.png" alt="covid-19 lung image" class="disease-img">
+                              <p class="disease-name">COVID-19</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="" >
+                              <img src="./public/images/Home-Page/Hero section/asthma.png" alt="Asthama lung image" class="disease-img">
+                              <p class="disease-name">Asthma</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="" >
+                              <img src="./public/images/Home-Page/Hero section/copd.png" alt="COPD lung image" class="disease-img">
+                              <p class="disease-name">COPD</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="" >
+                              <img src="./public/images/Home-Page/Hero section/ild.png" alt="ILD lung image" class="disease-img">
+                              <p class="disease-name">ILD</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="" >
+                              <img src="./public/images/Home-Page/Hero section/cancer.png" alt="Cancer lung image" class="disease-img">
+                              <p class="disease-name">Cancer</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="" >
+                              <img src="./public/images/Home-Page/Hero section/emphysema.png" alt="Emphysema lung image" class="disease-img">
+                              <p class="disease-name">Emphysema</p>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+            </section>
+            <section class="section-float-text text-center">
+                <div class="float-text">
+                    <h2 class="heading-secondary">
+                        Respiratory clinical trials are <span>costly</span> and <span>inefficient,</span> Our mission is to accelerate therapies to patients.</h2>
+                    <div class="separator"><span></span></div>
+                    <div class="animated-text">
+                        <h3 class="heading-tertiary"><strong class="auto-type"></strong></h3>
+                    </div>
+                </div>
+            </section>
+            <section class="section-process">
+                <div class="container text-center">
+                    <div class="process-text-box">
+                        <h2 class="heading-secondary">
+                            <span>Lung Intelligence</span> enables <span>data-driven clinical trials,</span> empowering efficiencies through precision endpoints, optimized imaging operations, and data insights.</h2>
+                    </div>
+                    <div class="process-img-box">
+                        <a href="" >
+                            <img src="./public/images/Home-Page/Process section/process-img.png" alt="vida intelligence process image">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-features grid grid-4-cols">
+                <div class="feature">
+                    <ion-icon name="business" class="feature-icons"></ion-icon>
+                    <p class="feature-data">1000+</p>
+                    <p class="feature-text">Sites</p>
+                </div>
+                <div class="feature">
+                    <ion-icon name="earth-outline" class="feature-icons"></ion-icon>
+                    <p class="feature-data">40+</p>             
+                    <p class="feature-text">Countries</p>
+                </div>
+                <div class="feature">
+                    <ion-icon name="layers" class="feature-icons"></ion-icon>
+                    <p class="feature-data">500+TB</p>
+                    <p class="feature-text">Lung Data</p>
+                </div>
+                <div class="feature">
+                    <ion-icon name="bar-chart-outline" class="feature-icons"></ion-icon>
+                    <p class="feature-data">15,000+</p>
+                    <p class="feature-text">Metrics per Study</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-nav grid footer-grid">
+                <div class="logo-col">
+                    <a href="#" class="footer-logo"><img src="./public/images/Home-Page/vida-footer-logo.webp" alt="vida-footer-logo image"></a>
+                    <p class="footer-text">VIDA is a precision lung health company, accelerating therapies to patients through AI-powered lung intelligence. VIDA Discovery services enable more efficient respiratory clinical trials by providing more precise quantitative endpoints, AI-powered data quality controls, site training, and more to help biopharma sponsors save millions in drug development costs. VIDA Insights empowers physicians to better manage patients with or at risk of chronic obstructive pulmonary disease (COPD), interstitial lung disease (ILD), asthma, emphysema, lung cancer, COVID-19 and more.</p>
+                </div>            
+                <div class="nav-col-tc">
+                    <p class="footer-heading">Terms & Conditions</p>
+                    <ul class="footer-list">
+                        <li><a href="/" class="footer-link">Website and Data Privacy Notice</a></li>
+                        <li><a href="/" class="footer-link">HIPAA Compliance Statement</a></li>
+                        <li><a href="/" class="footer-link">ISO Certification</a></li>
+                        <li><a href="/" class="footer-link">MDS2</a></li>
+                        <li><a href="/" class="footer-link">DICOM Compliance</a></li>
+                        <li><a href="/" class="footer-link">EU Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="nav-col">
+                    <p class="footer-heading">About</p>
+                    <ul class="footer-list">
+                        <li><a href="/" class="footer-link">News</a></li>
+                        <li><a href="/" class="footer-link">Leadership</a></li>
+                        <li><a href="/" class="footer-link">Investors</a></li>
+                        <li><a href="/" class="footer-link">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="address-social-col">
+                    <div class="social">
+                        <p class="footer-heading">Follow us</p>
+                        <ul class="social-links">
+                            <li><a class="social-link" href="/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a class="social-link" href="/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a class="social-link" href="/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a class="social-link" href="/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a class="social-link" href="/"><ion-icon name="logo-vimeo"></ion-icon></a></li>
+                            <li><a class="social-link" href="/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="address">
+                        <p class="footer-heading">Contact us</p>
+                        <ul class="footer-list">
+                            <li><a href="tel:855.900.8432" class="footer-link">855.900.8432</a></li>
+                            <li><a href="mailto:info@vidalung.ai" class="footer-link">info@vidalung.ai</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copywright text-center">
+                <p>Copyright &copy; All Rights Reserved,</p>
+                <p>This website is inspired from <strong><a href="https://vidalung.ai/">VIDA Diagnostics</a></strong>. The whole frontend page work goes to creator - <strong>Anuroop Pamarthi.</strong></p>
+            </div>
+        </footer>
+        <!-- Typed.js script -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var typed = new Typed('.auto-type', {
+            strings: ['$985M average R&amp;D costs for novel therapeutics', '58% of respiratory drugs fail at the final phase of trials', '1 of every 7 adults suffers from a lung disorder', 'Lung is the #1 most expensive clinical trial disease category'],
+            typeSpeed: 20,
+            backSpeed: 18,
+            loop : true
+            });
+        </script>
+        <script src="./public/js/script.js"></script>
+    </body> 
+</html>

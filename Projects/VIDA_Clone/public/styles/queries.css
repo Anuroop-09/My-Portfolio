@@ -1,0 +1,632 @@
+/* rem & em do not depends on declared font-size */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 90em) {
+
+  .heading-primary {
+    padding: 0 2.4rem;
+  }
+
+  .dropdown-icon {
+    display: none;
+  }
+    
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .dropdown-icon {
+      display: none;
+    }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+      padding: 0 6.4rem;
+    }
+
+    .logo img {
+      width: 70%;
+    }
+
+    .header {
+      padding: 1.2rem 6rem
+    }
+
+    .hero-text-box {
+      font-size: 2.6rem;
+      /* padding: 0; */
+    }
+
+    .heading-primary {
+      padding: 0 3.4rem;
+    }
+
+    .section-float-text {
+      padding: 6rem 8.6rem 12.8rem 8.6rem;
+    }
+
+    .float-text h2 { 
+      padding: 0 16rem;
+    }
+
+    .heading-tertiary {
+      font-size: 2.4rem;
+    }
+
+    .process-text-box {
+      padding: 0 6.4rem;
+    }
+
+    .section-features {
+      padding: 4rem 6.4rem;
+    }
+
+    .logo-col img {
+      width: 50%;
+    }
+
+    .footer-nav {
+      padding: 4.8rem 6.4rem;
+    }
+
+    .request-text p {
+      font-size: 2.6rem;
+    }
+
+    .section-trails .heading-secondary {
+      padding: 0 16.6rem;
+    }
+
+    .section-authors {
+      padding: 2.6rem;
+    }
+
+    .author img {
+      width: 12rem;
+    }
+
+    .author-text {
+      font-size: 1.4rem;
+    }
+
+    .office-heading {
+      font-size: 3.4rem;
+    }
+
+    .form-text-box {
+      font-size: 4.8rem;
+    }
+
+    .newsletter-form input{
+      font-size: 1.2rem;
+      padding: 0.6rem;
+      border-radius: 3px;
+    }
+
+    .newsletter-form label {
+      font-size: 1.2rem;
+    }
+
+    .form-btn {
+      font-size: 1.2rem;
+    }
+    
+    .footer-grid {
+      grid-template-columns: 1.5fr 1fr;
+      row-gap: 2.4rem;
+    }
+
+    .nav-col-tc {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+
+  .btn-mobile-nav {
+    display: block;
+    grid-area: 1 / 2;
+    justify-self: end;
+    padding: 2rem 4.8rem;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+
+  .logo {
+    padding: 2rem 4.8rem;
+  }
+
+  .logo img {
+    width: 24rem;
+  }
+
+  .navbar {
+    grid-column: 1 / -1;
+    /* transform: translateY(100%); */
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .nav-item {
+    padding: 2rem 4.8rem;
+    background-color: #eee;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-icon {
+    display: block;
+    margin-left: auto;
+  }
+
+  .sub-menu {
+    display: block;
+    position: initial;
+    box-shadow: none;
+    background-color: #eee;
+    width: initial;
+    /* transform: translateY(100%); */
+  }
+
+  /* .header {
+    position: relative;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #ddd;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    font-weight: bold;
+    transform: translateX(100%);
+
+    display: flex;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2.4rem;
+  }
+
+  .nav-item {
+    padding: 1.2rem;
+  }
+
+  .sub-menu {
+    display: block;
+    position: initial;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+  } 
+
+  .sub-link:link {
+    padding: 1.2rem;
+  } */
+
+  .nav-open .navbar {
+    display: block;
+    /* transform: translateX(0); */
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  
+  .nav-item:hover {
+    background-color: #043b4f;
+  }
+
+  .nav-item:hover .nav-link {
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .heading-primary {
+    padding: 0 1.6rem;
+  }
+
+  .hero-text-box {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .btn-see:link {
+    padding: 1rem 1.8rem;
+    font-size: 1.2rem;
+  }
+
+  .diseases-list li a {
+    font-size: 1.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+  
+  .float-text h2 {
+    padding: 0 8rem;
+  }
+
+  .separator {
+    padding: 2.6rem 0;
+  }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+  }
+
+  .section-float-text{
+    padding: 6rem 8.6rem 10.8rem 8.6rem;
+  }
+
+  .feature-icons {
+    font-size: 6.4rem;
+  }
+
+  .feature-data {
+    font-size: 3.4rem;
+  }
+
+  /* .logo img {
+    width: 80%;
+  } */
+
+  .request-text p {
+    font-size: 2rem;
+  }
+
+  .btn-request, .btn-demo {
+    padding: 1.2rem 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-learn {
+    padding: 1rem 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .brand-logo {
+    width: 12rem;
+  }
+
+  .section-trails .heading-secondary {
+    padding: 0 12.6rem;
+  }
+
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-img {
+    width: 12rem;
+  }
+
+  .demo-text {
+    font-size: 1.4rem;
+  }
+
+  .btn-demo {
+    width: 16rem;
+  }
+
+  .author-head {
+    font-size: 2.6rem;
+  }
+
+  .author img {
+    width: 10rem;
+  }
+  
+  .author-text {
+    font-size: 1.2rem;
+  }
+
+  h2.connect-heading {
+    font-size: 2.6rem;
+  }
+
+  .images {
+    display: none;
+  }
+
+  section.section-location {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-primary {
+    font-size: 3.8rem;
+  }
+
+  .card {
+    width: 16rem;
+  }
+
+  h1.about-heading {
+    font-size: 3rem;
+  }
+
+  p.about-text {
+    font-size: 1.4rem;
+  }
+
+  ul.highlight-list {
+    font-size: 1.4rem;
+  }
+
+  li.highlight-item {
+    padding-bottom: 0.5rem;
+  }
+
+  div.about-navs {
+    padding: 4.8rem 0 6.4rem;
+  }
+
+  div.about-navs a:link {
+    font-size: 1.2rem;
+  }
+
+  div.news-partners div p {
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .grid-6-cols {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+  }
+
+  .hero-text-box {
+    font-size: 2.33rem;
+    padding: 3rem;
+  }
+
+  .heading-primary {
+    padding: 0 7.6rem;
+  }
+
+  .btn-see:link {
+    padding: 1.4rem 2.6rem;
+    font-size: 1.6rem;
+  }
+  
+  .float-text h2 {
+    padding: 0 6.4rem;
+  }
+
+  .process-img-box a img {
+    max-width: 100%;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.4rem;
+  }
+
+  .section-float-text {
+    padding: 3rem 4.8rem 8rem 4.8rem;
+  }
+
+  .process-text-box {
+    padding: 0 4.8rem;
+  }
+
+  .feature-data {
+    font-size: 2.6rem;
+  }
+
+  .footer-nav {
+    padding: 2.6rem 4.8rem;
+  }
+
+  .section-request {
+    padding: 2.4rem 6.4rem;
+  }
+
+  .section-how {
+    padding: 3rem 4.8rem;
+  }
+
+  .brands {
+    gap: 1.8rem;
+    margin: 3.4rem 0;
+  }
+
+  .section-trails .heading-secondary {
+    padding: 0 8rem;
+  }
+  
+  .testimonial img:last-child {
+    grid-area: 3;
+  }
+
+  .testimonial {
+    row-gap: 2.4rem;
+  }
+
+  h2.connect-heading {
+    font-size: 2rem;
+  }
+
+  .section-connect {
+    gap: 4.8rem;
+  }
+
+  div.connect-form {
+    width: 80%;
+  }
+
+  h3.office-heading {
+    font-size: 3.6rem;
+  }
+
+  .contact-primary {
+    font-size: 2.6rem;
+  }
+
+  .contact-text {
+    font-size: 1.4rem;
+  }
+
+  .contact-cards{
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .card {
+    width: 26rem;
+  }
+
+  .form-text-box {
+    font-size: 3.6rem;
+    padding: 0 4.8rem;
+  }
+
+  .form-newsletter {
+    padding: 0 2.6rem;
+  }
+
+  .newsletter-form {
+    padding: 4.8rem;
+  }
+
+  .about-head-img {
+    margin-top: 2rem;
+  }
+
+  p.about-text {
+    font-size: 1.8rem;
+  }
+
+  ul.highlight-list {
+    font-size: 1.8rem;
+  }
+
+  div.news-partners div p {
+    padding: 0.2rem;
+  }
+
+  .global-news {
+    padding: 0 3.2rem;
+  }
+
+
+}
+
+
+/**************************/
+/* fixing safari flex box app */
+/**************************/
+/* .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 4.8rem;
+  }
+  
+  .no-flexbox-gap .list-item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+  
+  .no-flexbox-gap .list-icon:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .delivered-faces {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .meal-attribute:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  
+  .no-flexbox-gap .meal-icon {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .footer-row div:not(:last-child) {
+    margin-right: 6.4rem;
+  }
+  
+  .no-flexbox-gap .social-links li:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  
+  .no-flexbox-gap .footer-nav li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  
+  @media (max-width: 75em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+  
+  @media (max-width: 59em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 4.8rem;
+    }
+  } */
