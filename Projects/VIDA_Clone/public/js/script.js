@@ -7,7 +7,7 @@ const lockIcon = document.querySelector('.lock-icon');
 
 function openorCloseMenu() {
     headerEl.classList.toggle('nav-open');
-    liItem.classList.remove('cta');
-    linkItem.classList.remove('cta');
+    liItem.classList.toggle('cta');
+    linkItem.classList.toggle('cta');
     lockIcon.style.display = "none"
 }

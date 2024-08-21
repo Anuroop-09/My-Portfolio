@@ -26,6 +26,10 @@
   align-self: auto;
 }
 
+.dropdown-icon {
+  display: none;
+}
+
 .nav-link:link,
 .nav-link:visited {
   text-decoration: none;
