@@ -650,6 +650,76 @@
     padding: 0 3.2rem;
   }
 
+  .grid-6-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-nav {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .nav-col-tc {
+    grid-area: 2 / 1 / 3 / -1;
+  }
+
+  .nav-col {
+    grid-area: 3 / 1 / 4 / -1;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .stages {
+    column-gap: 0;
+    row-gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .stage img {
+    width: 50%;
+  }
+
+  .section-trails .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .brands {
+    display: initial;
+  }
+
+  .connect-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form {
+    grid-template-columns: 1fr;
+    padding: 2.4rem;
+  }
+
+  .form-newsletter {
+    padding: 2rem;
+  }
+
+  .form-text-box {
+    padding: 0 2.4rem;
+  }
+
+  div.about-navs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .news-partners {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .partners img {
+    width: 50%;
+  }
 
 }
 
@@ -688,10 +758,6 @@
     margin-top: 2rem;
   }
 
-  .grid-6-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .float-text h2 {
     padding: 0 2rem;
   }
@@ -728,30 +794,8 @@
     padding: 2rem 2.4rem;
   }
 
-  .grid-3-cols {
-    grid-template-columns: 1fr;
-  }
-
-  .stages {
-    column-gap: 0;
-    row-gap: 1rem;
-    margin-top: 2rem;
-  }
-
   .heading-how {
     font-size: 2.6rem;
-  }
-
-  .stage img {
-    width: 50%;
-  }
-
-  .section-trails .heading-tertiary {
-    font-size: 2rem;
-  }
-
-  .brands {
-    display: initial;
   }
 
   .section-trails .heading-secondary {
@@ -773,10 +817,6 @@
     font-size: 1.6rem;
   }
 
-  .connect-form form {
-    grid-template-columns: 1fr;
-  }
-
   .section-location {
     margin: 2rem 4.8rem;
   }
@@ -785,48 +825,16 @@
     font-size: 3.2rem;
   }
 
-  .office-para {
-    font-size: 2.4rem;
-  }
-
   .addresses {
     grid-template-columns: 1fr;
-  }
-
-  .newsletter-form {
-    grid-template-columns: 1fr;
-    padding: 2.4rem;
-  }
-
-  .form-newsletter {
-    padding: 2rem;
   }
 
   .contact-text-box {
     margin-bottom: 3.2rem;
   }
 
-  .about-navs .news-partners {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-    padding: 2rem;
-  }
-
   .logo-col img {
     width: 18rem;
-  }
-
-  .footer-nav {
-    padding: 1.6rem 2.4rem;
-  }
-
-  .nav-col-tc {
-    grid-area: 2 / 1 / 3 / -1;
-  }
-
-  .nav-col {
-    grid-area: 3 / 1 / 4 / -1;
   }
 }
 
