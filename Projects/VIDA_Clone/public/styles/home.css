@@ -296,8 +296,8 @@
 }
 
 .footer-grid {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
-  column-gap: 3.6rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
 }
 
 .footer-nav {
@@ -305,10 +305,15 @@
   padding: 4.8rem 9.6rem;
 }
 
+.logo-col {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
 .footer-text {
   margin-top: 2rem;
   font-size: 1.4rem;
   font-weight: 300;
+  text-align: justify;
 }
 
 .footer-heading {
@@ -318,13 +323,9 @@
   letter-spacing: 0.5px;
 }
 
-.address-social-col {
+.social-col {
   display: flex;
   flex-direction: column;
-}
-
-.address {
-  margin-top: 5rem;
 }
 
 .footer-list {
@@ -369,6 +370,5 @@
 }
 
 .copywright a {
-  text-decoration: none;
   color: inherit;
 }
