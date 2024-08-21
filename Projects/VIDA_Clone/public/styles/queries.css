@@ -721,6 +721,12 @@
     width: 50%;
   }
 
+  .demo-grid {
+    grid-template-columns: 1fr;
+    padding: 2.4rem 4.8rem;
+    row-gap: 2rem;
+  }
+
 }
 
 /**************************/
@@ -805,12 +811,6 @@
 
   .section-testimonial {
     padding: 3rem;
-  }
-
-  .demo-grid {
-    grid-template-columns: 1fr;
-    padding: 2.4rem 4.8rem;
-    row-gap: 2rem;
   }
 
   h2.connect-heading {
