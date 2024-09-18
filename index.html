@@ -3,28 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="./resources/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Anuroop Pamarthi</title>
 </head>
 <body>
-
-    <main>
-        <section class="about">
-            <h1 class="heading-primary">Hi, I'm Anuroop Pamarthi</h1>
-            <p class="author-intro">Aspiring & Passionate Full Stack & Python(Flask) Web Developer</p>
-        </section>
-        <section class="projects">
-            <h2 class="heading-secondary">Checkout My Work</h2>
-
-            <h3 class="heading-teritary">Static & Responsive Web Applications</h3>
-            <ul class="projects-list">
-                <li class="project"><a href="./Projects/VIDA_Clone/index.html">VIDA</a></li>
-                <li class="project"><a href="./Projects/Omnifood_Project/index.html">Omnifood</a></li>
-                <li class="project"><a href="./Projects/Slack Home_Clone/index.html">Slack - Bootstrap</a></li>
+    <header class="header">
+        <nav class="navbar flex">
+            <div>
+                <img src="" alt="logo">
+            </div>
+            <ul class="nav-list flex">
+                <li class="nav-item"><a class="nav-link" href="">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="">projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="">contact</a></li>
             </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro center container">
+            <div class="author-img">
+                <img class="author-image" src="./resources/public/Images/Author-Image.jpg" alt="author-image">
+            </div>
+            <div class="author-details">
+                <h1 class="heading-primary">Hello, I'm Anuroop Pamarthi</h1>
+                <p class="about">I'm a Full Stack Developer & Python Developer. Also an experineced Program Anaylst / QA Engineer with having 2+ yrs of experience in both Manual/Functional Testing and Automation with Playwright and Selenium-Java</p>
+            </div>
+        </section>
+        <section class="projects container">
+            <h2 class="heading-secondary center mb-4">have a look on my work</h2>
+            <div class="project-category">
+                <h3 class="heading-tertitary">static / responsive web projects</h3>
+                <ul class="project-list grid">
+                    <li class="project-item vida"><a class="project-link" href="./Projects/VIDA_Clone/index.html">vida</a></li>
+                    <li class="project-item omnifood"><a class="project-link" href="./Projects/Omnifood_Project/index.html">omnifood</a></li>
+                    <li class="project-item slack"><a class="project-link" href="./Projects/Slack Home_Clone/index.html">slack</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3 class="heading-tertitary">python projects</h3>
+                <ul class="project-list grid">
+                    <li class="project-item blog"><a class="project-link" href="https://blog-deployment-site.onrender.com/">blog site project</a></li>
+                </ul>
+            </div>
+            <div class="project-category">
+                <h3 class="heading-tertitary">react projects</h3>
+                <ul class="project-list grid">
+                    <li class="project-item keeper-app"><a class="project-link" href="https://yvdngg.csb.app/">keeper app</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills">
+            <h2 class="heading-secondary">check out my skills</h2>
+            <div>
+                <ul></ul>
+            </div>
         </section>
     </main>
-
-    <script src="./resources/js/script.js"></script>
+    <footer>
+        <div></div>
+    </footer>
+    
 </body>
 </html>

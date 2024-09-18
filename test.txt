@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./resources/styles/styles.css">
+</head>
+<body>
+
+    <main>
+        <section class="about">
+            <h1 class="heading-primary">Hi, I'm Anuroop Pamarthi</h1>
+            <p class="author-intro">Aspiring & Passionate Full Stack & Python(Flask) Web Developer</p>
+        </section>
+        <section class="projects">
+            <h2 class="heading-secondary">Checkout My Work</h2>
+
+            <h3 class="heading-teritary">Static & Responsive Web Applications</h3>
+            <ul class="projects-list">
+                <li class="project"><a href="./Projects/VIDA_Clone/index.html">VIDA</a></li>
+                <li class="project"><a href="./Projects/Omnifood_Project/index.html">Omnifood</a></li>
+                <li class="project"><a href="./Projects/Slack Home_Clone/index.html">Slack - Bootstrap</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="./resources/js/script.js"></script>
+</body>
+</html>
